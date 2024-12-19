@@ -1,0 +1,36 @@
+# System clock (100 MHz)
+NET "clk" LOC = "V10";       # Modify according to your FPGA's system clock pin
+
+# Reset signal
+NET "reset" LOC = "C9";      # Modify according to your FPGA's reset pin
+
+# UART RX input pin
+NET "rx" LOC = "N17";        # Modify according to your chosen UART RX pin
+
+# UART TX output pin
+NET "tx" LOC = "N18";        # Modify according to your chosen UART TX pin
+
+# UART TX start signal
+NET "tx_start" LOC = "C4";   # Modify based on your hardware connection
+
+# UART TX data input (8 bits)
+NET "tx_data_in<0>" LOC = "T10";
+NET "tx_data_in<1>" LOC = "T9";
+NET "tx_data_in<2>" LOC = "V9";
+NET "tx_data_in<3>" LOC = "M8";
+NET "tx_data_in<4>" LOC = "N8";
+NET "tx_data_in<5>" LOC = "U8";
+NET "tx_data_in<6>" LOC = "V8";
+NET "tx_data_in<7>" LOC = "T5";
+
+# UART RX data output (8 bits)
+NET "rx_data_out<0>" LOC = "U16";
+NET "rx_data_out<1>" LOC = "V16";
+NET "rx_data_out<2>" LOC = "U15";
+NET "rx_data_out<3>" LOC = "V15";
+NET "rx_data_out<4>" LOC = "M11";
+NET "rx_data_out<5>" LOC = "N11";
+NET "rx_data_out<6>" LOC = "R11";
+NET "rx_data_out<7>" LOC = "T11";
+
+
