@@ -1,0 +1,25 @@
+# System Clock
+NET "clk" LOC = V10;
+
+# Reset Button
+NET "rst" LOC = T5;  # Adjusted reset pin location
+
+# Start Switch
+NET "start" LOC = T10;
+
+# Partial and Result Buttons
+NET "partial_btn" LOC = T9;
+NET "result_btn" LOC = V9;
+
+# 8 LEDs (mapped to output 'LED[7:0]')
+NET "LED<0>" LOC = U16; 
+NET "LED<1>" LOC = V16; 
+NET "LED<2>" LOC = U15; 
+NET "LED<3>" LOC = V15; 
+NET "LED<4>" LOC = M11; 
+NET "LED<5>" LOC = N11; 
+NET "LED<6>" LOC = R11; 
+NET "LED<7>" LOC = T11;
+
+# Optionally bypass the dedicated clock path for the reset signal
+NET "rst" CLOCK_DEDICATED_ROUTE = FALSE;
