@@ -1,0 +1,22 @@
+# System clock (100 MHz)
+NET "clk" LOC = "V10";       # Modify according to your FPGA's system clock pin
+NET "rst" LOC = "T10";
+
+#NET "load" LOC = "T9";
+
+NET "rx" LOC = "N17";      
+NET "tx" LOC = "N18";
+#NET "busy" LOC = "T11";
+
+NET "switch<0>" LOC = "U8";
+NET "switch<1>" LOC = "V8";
+NET "switch<2>" LOC = "T5";
+
+NET "test<0>" LOC = "U16";
+NET "test<1>" LOC = "V16";
+NET "test<2>" LOC = "U15";
+NET "test<3>" LOC = "V15";
+NET "test<4>" LOC = "M11";
+NET "test<5>" LOC = "N11";
+NET "test<6>" LOC = "R11";
+NET "test<7>" LOC = "T11";
